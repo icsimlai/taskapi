@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configmap.name }}
+  labels:
+    app: {{ template "fullname" . }}
+    draft: {{ default "draft-app" .Values.draft }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+
+data:
+  config.json: |
+    {
+      "api": {
+        "baseUri": {{ .Values.data.baseUri }}
+        "taskapiserviceversion": {{ .Values.data.tapiserviceversion }}
+      }
+    }
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "fullname" . }}
+  labels:
+    draft: {{ default "draft-app" .Values.draft }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+spec:
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      labels:
+        draft: {{ default "draft-app" .Values.draft }}
+        app: {{ template "fullname" . }}
+    spec:
+      containers:
+      - name: {{ .Chart.Name }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        ports:
+        - containerPort: {{ .Values.service.internalPort }}
+          httpGet:
+            path: /
+            port: {{ .Values.service.internalPort }}
+        resources:
+      volumes:
+        - name: {{ .Values.volumes.volume }}
+          configMap:
+            name: {{ .Values.configmap.name }}
+{{ toYaml .Values.resources | indent 12 }}
