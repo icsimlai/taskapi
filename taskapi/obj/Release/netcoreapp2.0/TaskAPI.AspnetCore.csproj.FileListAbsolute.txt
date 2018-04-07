@@ -1,0 +1,11 @@
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\bin\Release\netcoreapp2.0\TaskAPI.AspnetCore.deps.json
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\bin\Release\netcoreapp2.0\TaskAPI.AspnetCore.runtimeconfig.json
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\bin\Release\netcoreapp2.0\TaskAPI.AspnetCore.runtimeconfig.dev.json
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\bin\Release\netcoreapp2.0\TaskAPI.AspnetCore.dll
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\bin\Release\netcoreapp2.0\TaskAPI.AspnetCore.pdb
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\obj\Release\netcoreapp2.0\TaskAPI.AspnetCore.csproj.CoreCompileInputs.cache
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\obj\Release\netcoreapp2.0\TaskAPI.AspnetCore.AssemblyInfoInputs.cache
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\obj\Release\netcoreapp2.0\TaskAPI.AspnetCore.AssemblyInfo.cs
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\obj\Release\netcoreapp2.0\TaskAPI.AspnetCore.dll
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\obj\Release\netcoreapp2.0\TaskAPI.AspnetCore.pdb
+E:\Demo\TaskAPI.AspnetCore\TaskAPI.AspnetCore\obj\Release\netcoreapp2.0\TaskAPI.AspnetCore.csprojResolveAssemblyReference.cache
