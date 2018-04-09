@@ -22,4 +22,4 @@
 	- Check out the [docs](/docs/index.md) to get started.
 
 ## Quickstart
-TBD....
+TBD
