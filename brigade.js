@@ -1,5 +1,9 @@
 const { events } = require("brigadier")
 
+events.on("exec", () => {
+  console.log("==> I'm handling an 'exec' event")
+})
+
 events.on("push", () => {
-  console.log("==> Handling an 'exec' event....")
+  console.log(" **** I'm a GitHub 'push' handler")
 })
