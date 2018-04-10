@@ -1,5 +1,5 @@
 const { events } = require("brigadier")
 
 events.on("push", () => {
-  console.log("==> handling an 'exec' event")
+  console.log("==> Handling an 'exec' event....")
 })
