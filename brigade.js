@@ -22,4 +22,4 @@ events.on("image_push", (e, p) => {
   var version = docker.target.tag || "latest"
   console.log(`Image Version: ${version}`)
   console.log(docker)
-}
+})
